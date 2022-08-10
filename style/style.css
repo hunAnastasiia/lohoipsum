@@ -27,7 +27,7 @@ body{
 }
 
 .nav__link{
-        font-weight: 700;
+    font-weight: 700;
     font-size: 15px;
     line-height: 20px;
     letter-spacing: -0.468947px;
@@ -117,8 +117,120 @@ body{
     padding: 53px 0px;
 }
 
-.header__flex, .footer__flex, .about{
+.header__flex, .footer__flex, .about, .subscribe, .plan__flex{
     display:flex;
     justify-content: space-between; 
     align-items: center;
+}
+
+.subscribe{
+    margin-bottom: 85px;
+}
+
+.subscribe__title{
+    color: #19191B;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 57px;
+    margin-bottom: 38px;
+    letter-spacing: -1.56316px;
+}
+
+.input{
+    width: 302px;
+    height: 60px;
+    border: 1px solid #7087FF;
+    border-radius: 10px;
+    margin-right: 39px;
+    padding-left: 14px;
+}
+
+.input::placeholder, .input{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.531474px;
+    color: #000000;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.plan{
+    margin-bottom: 132px;
+}
+
+.plan__title{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1.87579px;
+    color: #19191B;
+    max-width: 504px;
+    margin-bottom: 110px;
+}
+
+.item{
+    width: 330px;
+    background: #F8F8F8;
+    border-radius: 10px;
+    text-align: center;
+    padding: 34px 0 27px 0;
+}
+
+.item:hover{
+    transition: 500ms;
+    background: #FF7143;
+    box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.317827);
+}
+
+.item__text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.562737px;
+    color: #696871;
+}
+
+.item:hover .item__text, .item:hover .item__title, .item:hover .item__li{
+color: white;
+transition: 500ms;
+}
+
+.item__title{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 56px;
+    letter-spacing: -1.03448px;
+    color: #1D293F;
+    margin: 22px 0 28px 0;
+}
+
+.item__title span{
+    font-size: 28px;
+    line-height: 56px;
+    letter-spacing: -1.03448px;
+}
+
+.item__li{
+    list-style: none;
+    font-size: 17px;
+    line-height: 50px;
+    letter-spacing: -0.531474px;
+    color: #696871;
+}
+
+.button__item{
+    width: 285px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    color:#5454D4;
+    margin-top: 35px;
+}
+
+.item:hover .button__item{
+    background: #9F3919;
+    color: white;
+    transition: 500ms;
 }
